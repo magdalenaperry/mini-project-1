@@ -1,0 +1,264 @@
+html *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/* span {
+    padding-top: 100px;
+} */
+
+body {
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.055);
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #cc8b8ca9;
+    opacity: 50%;
+    color: white;
+    width: 100%;
+    height: 120px;
+    font-variant:small-caps;
+}
+
+/* header flexboxes */
+.header-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: flex-start;
+    align-content: normal;
+}
+
+.flex-logo{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 0;
+    align-self: 0;
+    order: 0;
+}
+
+.flex-head {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-self: auto;
+    order: 1;
+}
+
+.flex-nav{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 3;
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 300;
+
+}
+
+nav{
+    padding-top: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav>a {
+    font-size: 14px;
+    text-decoration: none;
+    margin:0px;
+}
+
+#logo {
+    margin: 10px 5px 10px 5px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+a{
+    padding: 8px;
+
+}
+
+.concha{
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #cc8b8c;
+     border-radius: 4px;
+}
+
+nav a {
+    color: black;
+    /* float: right;
+    position:sticky; */
+    font-weight: 30px;
+}
+ 
+
+.recipe-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 50px 10px 50px 10px;
+}
+
+.recipe-image {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    text-align: left;
+    font-variant: small-caps ;
+    letter-spacing: 3px;
+}
+
+.recipe-paragraph{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 1;
+    padding: 25px 20px 0px 50px;
+    font-size: 14px;
+}
+
+ul{
+    padding: 5px 0px 5px 35px;
+    list-style: square;
+    font-size: 14px;
+}
+
+
+/* h1 {
+    float:left;
+    position: fixed;
+    left: 125px;
+    top: 25px;
+    font-weight: 200px;
+    font-size: 36px;
+} */
+
+
+.recipe-gallery {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin: 10px;
+    height: 225px;
+    width: 100;
+    overflow:scroll;
+}
+
+article.gallery {
+    flex: auto;
+    text-align: center;
+    margin: 15px;
+    float: left;
+    width: 200px;
+}
+
+article.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+article.recipe-name {
+    padding: 15px;
+    text-align: center;
+}
+
+.contact-links{
+    display: inline;
+    width:100%;
+}
+
+.contact-me{
+    padding: 0px 50px 0px 50px;
+}
+footer a{
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-right:10px;
+    padding-left:10px;
+    display: inline-block;
+    color:black; 
+}
+
+form {
+    text-align: left;
+    height:200px;
+    background-color: rgba(211, 211, 211, 0.356);
+    padding-left: 10px;
+    float:right;
+}
+
+button {
+    background-color: gray;
+    color: white; 
+    border: none;
+    padding: 5px;
+    width: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+    background: #cc8b8ccc;
+    width:100%;
+    height:200px;
+    text-align: center;
+    margin-top: 100px;
+    opacity: 50%;
+}
+
+input{
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 25px;
+    color: black;
+
+} 
+
+
+@media screen and (max-width:1050px) {
+    nav a {
+        display: block;
+        float: none;
+    }
+    header{
+        padding-bottom: 0px;
+    }
+
+    .flex-nav{
+        padding-top: 10px;
+    }
+}

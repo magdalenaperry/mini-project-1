@@ -4,36 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Mini Project</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Magdalena's Bakery</title>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img id="logo" src="https://via.placeholder.com/100" alt="page logo">
-        <h1>Magdalena's Bakery</h1>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
-        </nav>
-    </header>
-    <main class="recipe-container">
-        <h2 class="recipe-name">FEATURED RECIPE</h2>
-        <figure class="recipe-image">
-        <img src="https://via.placeholder.com/400" alt="placeholder image"/>
-        <figcaption>This is a placeholder image of a baked good.</figcaption>
-        </figure>
-        <p class="recipe">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae nunc sed velit dignissim sodales ut. Justo laoreet sit amet cursus sit. In vitae turpis massa sed. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Facilisi etiam dignissim diam quis enim lobortis. Semper auctor neque vitae tempus quam pellentesque. Dui accumsan sit amet nulla facilisi morbi. Risus quis varius quam quisque id diam vel quam. In hendrerit gravida rutrum quisque non tellus orci ac. Nam libero justo laoreet sit amet. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Pellentesque habitant morbi tristique senectus et. Platea dictumst quisque sagittis purus sit amet. Sit amet venenatis urna cursus eget nunc scelerisque. In mollis nunc sed id semper risus in. Tempor nec feugiat nisl pretium fusce id velit ut. Eu mi bibendum neque egestas congue quisque. Scelerisque felis imperdiet proin fermentum. Magna eget est lorem ipsum. Est pellentesque elit ullamcorper dignissim cras. Feugiat sed lectus vestibulum mattis. Pharetra sit amet aliquam id diam. Commodo odio aenean sed adipiscing. Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Eget sit amet tellus cras. Elit eget gravida cum sociis. Et tortor consequat id porta nibh venenatis cras sed.</p>
-    </main>
-    <form>
-        <h3>Contact Me</h3>
-        <div><input type="text" placeholder="Name"/></div>
-        <div><input type="email" placeholder="Email"/></div>
-        <button type="submit">SEND</button></div>
-    </form>
+        <div class="header-container">
+            <img class="flex-logo" id="logo" alt="page logo" src="/assets/images/mixer.png">
+            <h1 class="flex-head">magdalena confections</h1>
+            <nav class="flex-nav">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+            </nav>
+        </div>
 
+    </header>
+   
+    <main class="recipe-container">
+        <!-- <h2 class="recipe-name">FEATURED RECIPE</h2> -->
+        <div class="recipe-image">
+            <h2>mexican conchas</h2>
+            <img class="concha" src="/assets/images/conchas.jpg" alt="Mexican chocolate and strawberry conchas" height="600">
+        </div>
+        <div class="recipe-paragraph">
+            <p>
+            Mexican Conchas are one of the trademark Mexican breads. They are very similar in consistency to a brioche and are topped with a shortbread cookie-like layer. 
+            They are called conchas, because of the 'shell' like pattern stamped on the top of each bread.
+            </p><br>
+            Ingredients:
+            <ul>
+                <li>500g bread flour</li>
+                <li>125g sugar</li>
+                <li>1 packet active dry yeast</li>
+                <li>3g salt</li>
+                <li>100g non-salted butter</li>
+                <li>100 ml eggs</li>
+                <li>5 ml vanilla</li>
+                <li>120 ml warm milk</li>
+            </ul>
+            <p>
+                Mix flour, sugar, and salt in a large mixing bowl. 
+                In a measuring cup, mix all wet ingredients and add yeast. 
+                Let yeast ferment for approximately 5 minutes.
+                Add fermented yeast mixture into bread bowl and mix on medium speed for approximately 8-10 minutes.
+                Dough is ready when it is smooth and elastic.
+                Let dough rise until doubled.
+                In another bowl, mix shortening, flour, and cocoa powder until it is shortbread consistency.
+                Divide into 12 portions.
+                After dough has risen, punch through the dough and create 12 rounded dough balls.
+                Take the shortbread portions and roll into thin discs to place and press down over your dough balls.
+                Allow dough balls to proof for 50 minutes.
+                Using a knife cut into the shortbread topping to create patterns.
+                Bake at 350 degrees for 20 minutes.
+
+            </p>
+        </div>
+    </main>
+
+
+    <section class="recipe-gallery">
+        <article class="gallery">
+            <img title="Tres Leches Cake" src="/assets/images/tres-leches-cake.JPG" alt="tres leches cake">
+            <div class="recipe-name">tres leches cake</div>
+        </article>
+        <article class="gallery">
+            <img title="Novias" src="/assets/images/novias.jpg" alt="name" width="400" height="200">
+            <div class="recipe-name">novias</div>
+        </article>
+        <article class="gallery">
+            <img title="Macarons" src="assets/images/macarons.JPG" alt="name" width="400" height="200">
+            <div class="recipe-name">strawberry macarons</div>
+        </article>
+        <article class="gallery">
+            <img title="Empanadas" src="assets/images/empanadas.jpg" alt="name" width="400" height="200">
+            <div class="recipe-name">empanadas</div>
+        </article>
+        <article class="gallery">
+            <img title="Tortellini" src="/assets/images/pasta.jpg" alt="name" width="400" height="200">
+            <div class="recipe-name">tortellini</div>
+        </article>
+        <article class="gallery">
+            <img title="pita" src="https:via.placeholder.com/200" alt="name" width="400" height="200">
+            <div class="recipe-name">pita bread</div>
+        </article>
+
+
+
+    </section>
+    
+
+
+    
     <footer>
-        <h3>MAGDALENA PERRY'S BAKERY</h3>
+        <form>
+            <article class="contact-me">
+            <h3>Contact Me</h3>
+            <div><input type="text" placeholder="Name"/></div>
+            <div><input type="email" placeholder="Email"/></div>
+            <button type="submit">SEND</button></div>
+            </article>
+        </form>
+        <h3>MAGDALENA PERRY CONFECTIONS</h3>
+
+        <span class= "contact-links"></span>
+            <a href="tel:7046097506">
+                <div>
+                    <i class="fa fa-phone" style='font-size:16px'><p>call me</p></i>
+                </div>
+            </a>
+            <a href="mailto:magperry1@gmail.com">
+                <div>
+                    <i class="fa fa-envelope" style="font-size:16px"><p>email me</p></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/mags.perr/">
+                <div>
+                    <i class="fa fa-instagram" style="font-size:16px"><p>mags.perr</p></i>
+                </div>
+            </a>
+
+         </span>
+
     </footer>
 </body>
 </html>
